@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"my_f103ve_1_demo\startup_stm32f103xe.o"
+"my_f103ve_1_demo\main.o"
+"my_f103ve_1_demo\stm32f1xx_it.o"
+"my_f103ve_1_demo\stm32f1xx_hal_msp.o"
+"my_f103ve_1_demo\stm32f1xx_hal_gpio_ex.o"
+"my_f103ve_1_demo\stm32f1xx_hal_tim.o"
+"my_f103ve_1_demo\stm32f1xx_hal_tim_ex.o"
+"my_f103ve_1_demo\stm32f1xx_hal_uart.o"
+"my_f103ve_1_demo\stm32f1xx_hal.o"
+"my_f103ve_1_demo\stm32f1xx_hal_rcc.o"
+"my_f103ve_1_demo\stm32f1xx_hal_rcc_ex.o"
+"my_f103ve_1_demo\stm32f1xx_hal_gpio.o"
+"my_f103ve_1_demo\stm32f1xx_hal_dma.o"
+"my_f103ve_1_demo\stm32f1xx_hal_cortex.o"
+"my_f103ve_1_demo\stm32f1xx_hal_pwr.o"
+"my_f103ve_1_demo\stm32f1xx_hal_flash_1.o"
+"my_f103ve_1_demo\stm32f1xx_hal_flash_ex.o"
+"my_f103ve_1_demo\stm32f1xx_hal_exti.o"
+"my_f103ve_1_demo\stm32f1xx_hal_flash_1.o"
+"my_f103ve_1_demo\system_stm32f1xx.o"
+"my_f103ve_1_demo\ws_drive_borad.o"
+"my_f103ve_1_demo\ws_drive_dwt.o"
+"my_f103ve_1_demo\kernel.o"
+--strict --scatter "MY_F103VE_1_DEMO\MY_F103VE_1_DEMO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MY_F103VE_1_DEMO.map" -o MY_F103VE_1_DEMO\MY_F103VE_1_DEMO.axf

@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: manba man, fffffff, LIC=IK1BF-6Y3R7-CXQU6-DU1PR-6YJSL-ZDVC8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\madao\Documents\MYNEWPROJECT\MY_F103VE_1_DEMO_MPU6050\MDK-ARM\MY_F103VE_1_DEMO.uvprojx
+Project File Date:  11/27/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+Build target 'MY_F103VE_1_DEMO'
+Note: source file '../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c' - object file renamed from 'MY_F103VE_1_DEMO\stm32f1xx_hal_flash.o' to 'MY_F103VE_1_DEMO\stm32f1xx_hal_flash_1.o'.
+Note: source file '../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c' - object file renamed from 'MY_F103VE_1_DEMO\stm32f1xx_hal_flash.o' to 'MY_F103VE_1_DEMO\stm32f1xx_hal_flash_1.o'.
+compiling ws_drive_dwt.c...
+../WS-Drivers/ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\WS-Drivers\ws_drive_dwt.c: 1 warning, 0 errors
+compiling main.c...
+../WS-Drivers/ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 1 warning, 0 errors
+compiling ws_drive_mpu6050.c...
+../WS-Drivers/ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\WS-Drivers\ws_drive_mpu6050.c(67): warning:  #223-D: function "Ws_debug" declared implicitly
+  	   Ws_debug("IIC write err %d\r\n",stu);
+..\WS-Drivers\ws_drive_mpu6050.c: 2 warnings, 0 errors
+compiling stm32f1xx_it.c...
+../WS-Drivers/ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32f1xx_it.c(188): warning:  #177-D: variable "count"  was declared but never referenced
+  	static int count = 0;
+../Core/Src/stm32f1xx_it.c: 2 warnings, 0 errors
+compiling ws_drive_borad.c...
+../WS-Drivers/ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\WS-Drivers\ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\WS-Drivers\ws_drive_borad.c(148): warning:  #177-D: variable "startTick"  was declared but never referenced
+    static uint32_t startTick = 0,stopTick,tick;	 //必须是静态变量
+..\WS-Drivers\ws_drive_borad.c(148): warning:  #177-D: variable "stopTick"  was declared but never referenced
+    static uint32_t startTick = 0,stopTick,tick;	 //必须是静态变量
+..\WS-Drivers\ws_drive_borad.c(148): warning:  #177-D: variable "tick"  was declared but never referenced
+    static uint32_t startTick = 0,stopTick,tick;	 //必须是静态变量
+..\WS-Drivers\ws_drive_borad.c: 5 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+../WS-Drivers/ws_drive_borad.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/stm32f1xx_hal_msp.c: 1 warning, 0 errors
+linking...
+MY_F103VE_1_DEMO\MY_F103VE_1_DEMO.axf: Warning: L6304W: Duplicate input file my_f103ve_1_demo\stm32f1xx_hal_flash_1.o ignored.
+MY_F103VE_1_DEMO\MY_F103VE_1_DEMO.axf: Error: L6218E: Undefined symbol Ws_debug (referred from ws_drive_mpu6050.o).
+MY_F103VE_1_DEMO\MY_F103VE_1_DEMO.axf: Error: L6218E: Undefined symbol hi2c2 (referred from ws_drive_mpu6050.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 1 warning and 2 error messages.
+"MY_F103VE_1_DEMO\MY_F103VE_1_DEMO.axf" - 2 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil::STM32F1xx_DFP@2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_MY_F103VE_1_DEMO
+  D:/keil5/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/keil5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

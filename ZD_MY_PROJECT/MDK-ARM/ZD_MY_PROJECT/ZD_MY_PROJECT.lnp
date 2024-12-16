@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"zd_my_project\startup_stm32f103xe.o"
+"zd_my_project\main.o"
+"zd_my_project\stm32f1xx_it.o"
+"zd_my_project\stm32f1xx_hal_msp.o"
+"zd_my_project\stm32f1xx_hal_gpio_ex.o"
+"zd_my_project\stm32f1xx_hal_tim.o"
+"zd_my_project\stm32f1xx_hal_tim_ex.o"
+"zd_my_project\stm32f1xx_hal_uart.o"
+"zd_my_project\stm32f1xx_hal.o"
+"zd_my_project\stm32f1xx_hal_rcc.o"
+"zd_my_project\stm32f1xx_hal_rcc_ex.o"
+"zd_my_project\stm32f1xx_hal_gpio.o"
+"zd_my_project\stm32f1xx_hal_dma.o"
+"zd_my_project\stm32f1xx_hal_cortex.o"
+"zd_my_project\stm32f1xx_hal_pwr.o"
+"zd_my_project\stm32f1xx_hal_flash.o"
+"zd_my_project\stm32f1xx_hal_flash_ex.o"
+"zd_my_project\stm32f1xx_hal_exti.o"
+"zd_my_project\system_stm32f1xx.o"
+--strict --scatter "ZD_MY_PROJECT\ZD_MY_PROJECT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ZD_MY_PROJECT.map" -o ZD_MY_PROJECT\ZD_MY_PROJECT.axf
