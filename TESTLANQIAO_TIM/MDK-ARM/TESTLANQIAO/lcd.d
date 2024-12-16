@@ -29,11 +29,14 @@ testlanqiao\lcd.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
 testlanqiao\lcd.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h
 testlanqiao\lcd.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 testlanqiao\lcd.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
+testlanqiao\lcd.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
+testlanqiao\lcd.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 testlanqiao\lcd.o: ../code/headfile.h
 testlanqiao\lcd.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 testlanqiao\lcd.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 testlanqiao\lcd.o: ../Core/Inc/main.h
 testlanqiao\lcd.o: ../Core/Inc/gpio.h
+testlanqiao\lcd.o: ../Core/Inc/tim.h
 testlanqiao\lcd.o: ../code/fun.h
 testlanqiao\lcd.o: ../code/headfile.h
 testlanqiao\lcd.o: ../code/lcd.h

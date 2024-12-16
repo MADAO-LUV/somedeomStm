@@ -7,6 +7,7 @@
 #include "stdint.h"
 #include "main.h"
 #include "gpio.h"
+#include "tim.h"
 
 #include "fun.h"
 #include "lcd.h"

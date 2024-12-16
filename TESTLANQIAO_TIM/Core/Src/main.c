@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -86,12 +87,18 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   HAL_GPIO_WritePin(GPIOD,GPIO_PIN_2,GPIO_PIN_RESET);
   LCD_Init();
   LCD_Clear(Black);
   LCD_SetBackColor(Black);   //设置背景颜色 为 Black
   LCD_SetTextColor(White);   // 设置字体颜色
+  
+  
+  HAL_TIM_Base_Start_IT(&htim2);  //使能中断 不要忘记
+  HAL_TIM_Base_Start(&htim3);  //使能中断 不要忘记
   /* USER CODE END 2 */
 
   /* Infinite loop */
