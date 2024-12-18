@@ -30,4 +30,11 @@ lanqiaotest_pwm\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ha
 lanqiaotest_pwm\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
 lanqiaotest_pwm\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 lanqiaotest_pwm\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
+lanqiaotest_pwm\stm32g4xx_it.o: ..\code\headfile.h
+lanqiaotest_pwm\stm32g4xx_it.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+lanqiaotest_pwm\stm32g4xx_it.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+lanqiaotest_pwm\stm32g4xx_it.o: ../Core/Inc/main.h
+lanqiaotest_pwm\stm32g4xx_it.o: ..\code\fun.h
+lanqiaotest_pwm\stm32g4xx_it.o: ..\code\headfile.h
+lanqiaotest_pwm\stm32g4xx_it.o: ..\code\lcd.h
 lanqiaotest_pwm\stm32g4xx_it.o: ../Core/Inc/stm32g4xx_it.h
